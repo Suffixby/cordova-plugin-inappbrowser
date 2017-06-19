@@ -940,7 +940,7 @@
     self.forwardButton.enabled = theWebView.canGoForward;
     [self.spinner stopAnimating];
 
-    self.addressLabel.text = NSLocalizedString(@"Load Error", nil);
+    self.addressLabel.text = NSLocalizedString(@"", nil);
 
     [self.navigationDelegate webView:theWebView didFailLoadWithError:error];
 }
