@@ -85,6 +85,7 @@
 }
 
 .action-back::before {
+    display: none;
     content: "\E0BA";
 }
 
@@ -94,6 +95,7 @@
 
 /* Forward */
 .action-forward::before {
+    display: none;
     content: "\E0AC";
 }
 
