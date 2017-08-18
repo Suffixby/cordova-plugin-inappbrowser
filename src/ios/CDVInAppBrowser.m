@@ -981,10 +981,10 @@
 {
     if (self = [super init]) {
         // default values
-        self.location = YES;
-        self.toolbar = NO;
+        self.location = NO;
+        self.toolbar = YES;
         self.closebuttoncaption = nil;
-        self.toolbarposition = kInAppBrowserToolbarBarPositionBottom;
+        self.toolbarposition = kInAppBrowserToolbarBarPositionTop;
         self.clearcache = YES;
         self.clearsessioncache = YES;
 
@@ -994,7 +994,7 @@
         self.keyboarddisplayrequiresuseraction = YES;
         self.suppressesincrementalrendering = NO;
         self.hidden = NO;
-        self.disallowoverscroll = NO;
+        self.disallowoverscroll = YES;
     }
 
     return self;
