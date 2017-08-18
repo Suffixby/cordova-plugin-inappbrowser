@@ -883,9 +883,9 @@
 {
     // loading url, start spinner, update back/forward
 
-    self.addressLabel.text = NSLocalizedString(@"Loading...", nil);
-    self.backButton.enabled = theWebView.canGoBack;
-    self.forwardButton.enabled = theWebView.canGoForward;
+    //self.addressLabel.text = NSLocalizedString(@"Loading...", nil);
+    //self.backButton.enabled = theWebView.canGoBack;
+    //self.forwardButton.enabled = theWebView.canGoForward;
 
     [self.spinner startAnimating];
 
@@ -906,9 +906,9 @@
 {
     // update url, stop spinner, update back/forward
 
-    self.addressLabel.text = [self.currentURL absoluteString];
-    self.backButton.enabled = theWebView.canGoBack;
-    self.forwardButton.enabled = theWebView.canGoForward;
+    //self.addressLabel.text = [self.currentURL absoluteString];
+    //self.backButton.enabled = theWebView.canGoBack;
+    //self.forwardButton.enabled = theWebView.canGoForward;
 
     [self.spinner stopAnimating];
 
