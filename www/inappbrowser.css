@@ -79,30 +79,30 @@
     height: 36px;
 }
 
-/* Back */
+/* Back
 .action-back { 
     margin-left: 0px;
 }
 
 .action-back::before {
-    display: none;
+
     content: "\E0BA";
 }
 
 .action-back:not([disabled]):hover::before {
     content: "\E0B3";
 }
-
-/* Forward */
+*/
+/* Forward
 .action-forward::before {
-    display: none;
+
     content: "\E0AC";
 }
 
 .action-forward:not([disabled]):hover::before {
     content: "\E0AF";
 }
-
+ */
 /* Close */
 .action-close::before {
     content: "\E0C7";
