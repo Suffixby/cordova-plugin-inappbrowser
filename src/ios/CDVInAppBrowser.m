@@ -982,11 +982,11 @@
     if (self = [super init]) {
         // default values
         self.location = YES;
-        self.toolbar = YES;
+        self.toolbar = NO;
         self.closebuttoncaption = nil;
         self.toolbarposition = kInAppBrowserToolbarBarPositionBottom;
-        self.clearcache = NO;
-        self.clearsessioncache = NO;
+        self.clearcache = YES;
+        self.clearsessioncache = YES;
 
         self.enableviewportscale = NO;
         self.mediaplaybackrequiresuseraction = NO;
