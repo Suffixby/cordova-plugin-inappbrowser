@@ -6,9 +6,7 @@
  to you under the Apache License, Version 2.0 (the
  "License"); you may not use this file except in compliance
  with the License.  You may obtain a copy of the License at
-
  http://www.apache.org/licenses/LICENSE-2.0
-
  Unless required by applicable law or agreed to in writing,
  software distributed under the License is distributed on an
  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -562,14 +560,14 @@
     self.webView.userInteractionEnabled = YES;
 
     self.spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    self.spinner.alpha = 0;
+    self.spinner.alpha = 1.000;
     self.spinner.autoresizesSubviews = YES;
     self.spinner.autoresizingMask = (UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleRightMargin);
     self.spinner.clearsContextBeforeDrawing = NO;
     self.spinner.clipsToBounds = NO;
     self.spinner.contentMode = UIViewContentModeScaleToFill;
     self.spinner.frame = CGRectMake(CGRectGetMidX(self.webView.frame), CGRectGetMidY(self.webView.frame), 20.0, 20.0);
-    self.spinner.hidden = YES;
+    self.spinner.hidden = NO;
     self.spinner.hidesWhenStopped = YES;
     self.spinner.multipleTouchEnabled = NO;
     self.spinner.opaque = NO;
@@ -799,7 +797,7 @@
 }
 
 - (BOOL)prefersStatusBarHidden {
-    return YES;
+    return NO;
 }
 
 - (void)close
@@ -1081,7 +1079,7 @@
     if ((self.orientationDelegate != nil) && [self.orientationDelegate respondsToSelector:@selector(shouldAutorotate)]) {
         return [self.orientationDelegate shouldAutorotate];
     }
-    return NO;
+    return YES;
 }
 
 - (NSUInteger)supportedInterfaceOrientations
@@ -1099,9 +1097,8 @@
         return [self.orientationDelegate shouldAutorotateToInterfaceOrientation:interfaceOrientation];
     }
 
-    return NO;
+    return YES;
 }
 
 
 @end
-
